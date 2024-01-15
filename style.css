@@ -1,3 +1,8 @@
+
+@font-face {
+    font-family: "Segoe ui historic" , sans-serif;
+    src: url(./font/Segoe\ ui\ historic.ttf);
+}
 *{
     margin: 0;
     padding: 0;
@@ -7,12 +12,13 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-family: "Segoe ui historic";
 }
 .container{
     display: flex;
     flex-direction: column;
     height: 80vh;
-    width: 500px;
+    width: 30%;
     margin: auto;
     border-radius: 16px;
     border: 1px solid;
@@ -28,7 +34,7 @@ body{
     width: 90%;
     text-align: center;
 }
-span{
+.topBar span{
     text-align: center;
     width: 40px;
     background-color: #e4e6eb;
@@ -38,14 +44,133 @@ span{
     justify-content: center;
     align-items: center;
 }
-i{
+.topBar i{
     font-size: 25px;
     font-weight: 600 !important;
     cursor: pointer;
 }
 .profile-img img{
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
 
+}
+.profileName{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.profile{
+    display: flex;
+    padding: 10px 10px;
+    align-items: center;
+}
+.profile p{
+    font-weight: 800;
+    font-size: 20px;
+}
+.publicPara{
+    display: flex;
+    gap: 8px;
+    padding: 4px 0px;
+    background-color: #E4E6EB;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 16px !important;
+    cursor: pointer;
+}
+.center{
+    height: 40%;
+    width: 100%;
+}
+.center textarea{
+    width: 97%;
+    height: 100%;
+    border: none;
+    padding: 0 10px;
+    font-size: 30px;
+}
+textarea::placeholder{
+    font-size: 30px;
+    color: #77797C;
+}
+textarea:active{
+    border: none;
+}
+.optOne{
+    background-color: #f0f2f5;
+}
+.backgroundPicker{
+    display: flex;
+    align-items: center;
+}
+.backgroundOpt{
+    display: flex;
+    gap: 5px;
+}
+.backgroundOpt div{
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+}
+.optOne{
+    background-image: url(./img/optTwo.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.optTwo{
+    background-image: url(./img/optTwo.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.optThree{
+    background-image: url(./img/optTwo.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.optFour{
+    background-image: url(./img/optTwo.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.optFive{
+    background-image: url(./img/optTwo.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.optSix{
+    background-image: url(./img/optTwo.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.optSeven{
+    background-image: url(./img/optTwo.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.optEight{
+    background-image: url(./img/optTwo.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.optNine{
+    background-image: url(./img/optTwo.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.optTen{
+    background-image: url(./img/optTwo.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
