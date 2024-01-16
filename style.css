@@ -18,7 +18,7 @@ body{
     display: flex;
     flex-direction: column;
     height: 80vh;
-    width: 30%;
+    width:500px;
     margin: auto;
     border-radius: 16px;
     border: 1px solid;
@@ -85,17 +85,21 @@ body{
     width: 100%;
 }
 .center textarea{
-    width: 97%;
+    width: 95%;
     height: 100%;
     border: none;
     padding: 0 10px;
     font-size: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
 }
 textarea::placeholder{
-    font-size: 30px;
+    font-size: 25px;
     color: #77797C;
 }
-textarea:active{
+textarea:focus{
     border: none;
 }
 .optOne{
@@ -110,9 +114,9 @@ textarea:active{
     gap: 5px;
 }
 .backgroundOpt div{
-    width: 52px;
-    height: 52px;
-    border-radius: 16px;
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
 }
 .optOne{
     background-image: url(./img/optTwo.webp);
@@ -173,4 +177,39 @@ textarea:active{
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
+}
+.background , .background img {
+    width: 45px;
+    height: 45px;
+}
+.toggleBox{
+    cursor: pointer;
+}
+.tagOption{
+    display: flex;
+    margin: 0px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2) ;
+    padding: 15px 10px ;
+    border-radius: 8px;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 800;
+}
+.icons{
+    display: flex;
+    gap: 10px;
+    font-size: 25px;
+    cursor: pointer;
+   
+}
+.icons span{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.icons i:hover{
+    background-color: #E4E6EB;
+}
+.icons span:first-child i:first-child{
+    color: #45BD62;
 }
