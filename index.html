@@ -20,7 +20,7 @@
         </div>
         <hr>
         <div class="profile">
-            <div class="profile-img">
+            <div class="profile-img" >
                 <img src="./profile.jpg" alt="">
             </div>
             <div class="profileName">
@@ -34,8 +34,9 @@
             <textarea name="" id="" cols="30" rows="20" placeholder="What's on your mind, S Nadeem Ali?"></textarea>
         </div>
         <div class="backgroundPicker">
-            <div class="background">
-                <img src="./SATP_Aa_square-2x.png" alt="">
+            <div class="background" id="background">
+                <img src="./SATP_Aa_square-2x.png" alt="" id="bgImg">
+                <span id="toggleArrow" class="toggleOpen toggleClose "><i class="fa-solid fa-angle-left"></i></span>
             </div>
             <div class="backgroundOpt">
                 <div class="optOne  toggleBox"></div>
@@ -54,13 +55,19 @@
             <p>Add to your post</p>
             <div class="icons">
 
-                <span><i class="fa-regular fa-images"></i></span>
+                <span id="imageInput"><i class="fa-regular fa-images"></i></span>
                 <span><i class="fa-solid fa-user-tag" style="color: #1877F2;"></i></span>
                 <span><i class="fa-regular fa-face-smile" style="color: #F7B928;"></i></span>
                 <span><i class="fa-solid fa-location-dot" style="color: red;"></i></span>
                 <span><i class="fa-solid fa-ellipsis" style="color: #2ABBA7;"></i></span>
             </div>
         </div>
+        <button id="post">Post</button>
+        <div class="resultBox">
+            <p id="result">I Am herer</p>
+        </div>
     </div>
+
+    <script src="./app.js"></script>
 </body>
 </html>

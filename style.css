@@ -110,8 +110,9 @@ textarea:focus{
     align-items: center;
 }
 .backgroundOpt{
-    display: flex;
+    display: none;
     gap: 5px;
+    
 }
 .backgroundOpt div{
     width: 35px;
@@ -181,13 +182,27 @@ textarea:focus{
 .background , .background img {
     width: 45px;
     height: 45px;
+    position: relative;
+}
+.toggleOpen{
+    position: absolute;
+    width: 25px;
+    height: 40px;
+    left: 10px;
+    top: 4px;
+    background-color: #E4E6EB;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
 }
 .toggleBox{
     cursor: pointer;
 }
 .tagOption{
     display: flex;
-    margin: 0px 10px;
+    margin: 10px 10px 0px 10px;
     border: 1px solid rgba(0, 0, 0, 0.2) ;
     padding: 15px 10px ;
     border-radius: 8px;
@@ -212,4 +227,24 @@ textarea:focus{
 }
 .icons span:first-child i:first-child{
     color: #45BD62;
+}
+#post{
+    padding: 10px 10px;
+    border-radius: 8px;
+    margin: 10px;
+    border: none;
+    background-color: #1877F2;
+    color: #ffff;
+    font-size: 20px;
+    font-weight: 600;
+}
+.resultBox{
+    padding: 0px 10px;
+    font-size: 15px;
+
+}
+#result{
+    background-color: #E4E6EB;
+    padding: 10px;
+    border-radius: 8px;
 }
