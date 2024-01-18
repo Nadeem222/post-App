@@ -1,6 +1,8 @@
 let background = document.querySelector("#bgImg");
 let toggles = document.querySelectorAll(".toggleBox");
 let textarea = document.querySelector("textarea");
+let post = document.querySelector("#post");
+let outputText = document.querySelector("#result")
 
 let arr = Array.from(toggles);
 
@@ -47,6 +49,15 @@ arr.forEach(toggles => {
         
     })
 })
+
+post.addEventListener('click' , () => {
+    let inputText = textarea.value;
+
+    outputText.innerHTML += `<span> ${inputText} </span> </br>`;
+
+    textarea.value = "";
+})
+
 
 background.addEventListener('click' , () =>{
     document.querySelector("#toggleArrow").style.display ="flex";

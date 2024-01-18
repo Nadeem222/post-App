@@ -112,6 +112,7 @@ textarea:focus{
 .backgroundOpt{
     display: none;
     gap: 5px;
+    transition: 1s ease-out;
     
 }
 .backgroundOpt div{
@@ -233,7 +234,7 @@ textarea:focus{
     font-size: 15px;
 
 }
-#result{
+#result span{
     background-color: #E4E6EB;
     padding: 10px;
     border-radius: 8px;
