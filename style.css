@@ -115,15 +115,14 @@ textarea:focus{
     
 }
 .backgroundOpt div{
-    width: 35px;
-    height: 35px;
+    width: 32px;
+    height: 32px;
     border-radius: 8px;
 }
 .optOne{
-    background-image: url(./img/optTwo.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
+    background-color: #E4E6EB;
+    border: 2px #fff;
+    box-shadow: inset 0 0 0 3px rgb(255, 255, 255),0 0 5px 0 rgb(240 , 240 , 240);
 }
 .optTwo{
     background-image: url(./img/optTwo.webp);
@@ -132,46 +131,37 @@ textarea:focus{
     overflow: hidden;
 }
 .optThree{
-    background-image: url(./img/optTwo.webp);
+    background-image: url(./img/optThree.webp);
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
 }
 .optFour{
-    background-image: url(./img/optTwo.webp);
+    background-image: url(./img/optFour.webp);
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
 }
 .optFive{
-    background-image: url(./img/optTwo.webp);
+    background-image: url(./img/optFive.webp);
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
 }
 .optSix{
-    background-image: url(./img/optTwo.webp);
+    background-image: url(./img/optSix.webp);
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
 }
 .optSeven{
-    background-image: url(./img/optTwo.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
+    background-color: #C600FF;
 }
 .optEight{
-    background-image: url(./img/optTwo.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
+    background-color: #E2013B;
 }
 .optNine{
-    background-image: url(./img/optTwo.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
+    background-color: black;
 }
 .optTen{
     background-image: url(./img/optTwo.webp);
@@ -186,10 +176,10 @@ textarea:focus{
 }
 .toggleOpen{
     position: absolute;
-    width: 25px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     left: 10px;
-    top: 4px;
+    top: 7px;
     background-color: #E4E6EB;
     border-radius: 8px;
     display: flex;
