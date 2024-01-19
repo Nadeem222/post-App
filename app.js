@@ -2,7 +2,9 @@ let background = document.querySelector("#bgImg");
 let toggles = document.querySelectorAll(".toggleBox");
 let textarea = document.querySelector("textarea");
 let post = document.querySelector("#post");
-let outputText = document.querySelector("#result")
+let outputText = document.querySelector("#result");
+let centre = document.querySelector(".center");
+
 
 let arr = Array.from(toggles);
 
@@ -22,28 +24,38 @@ arr.forEach(toggles => {
         textarea.style.background = '';
         textarea.style.backgroundImage = '';
         textarea.style.backgroundColor = '';
+        centre.style.height = '';
 
         if(inputBackkground === "optOne"){
-            textarea.style.background = "#fff" 
+            textarea.style.background = "#fff" ;
+            centre.style.height = "100%";
 
         }else if(inputBackkground === "optTwo" ){
-            textarea.style.backgroundImage = "url(./img/optTwo.webp)" 
+            textarea.style.backgroundImage = "url(./img/optTwo.webp)" ;
+            centre.style.height = "100%"
              
         }else if(inputBackkground === "optThree"){
             textarea.style.backgroundImage = "url(./img/optThree.webp)"
+            centre.style.height = "100%"
         }else if(inputBackkground === "optFour"){
             textarea.style.backgroundImage = "url(./img/optFour.webp)"
+            centre.style.height = "100%"
         }else if(inputBackkground === "optFive"){
-            textarea.style.backgroundImage = "url(./img/optFive.webp)"
+            textarea.style.backgroundImage = "url(./img/optFive.webp)";
+            centre.style.height = "100%"
         }else if(inputBackkground === "optSix"){
-            textarea.style.backgroundImage = "url(./img/optSix.webp)"
+            textarea.style.backgroundImage = "url(./img/optSix.webp)";
+            centre.style.height = "100%"
         }
         else if(inputBackkground === "optSeven"){
-            textarea.style.backgroundColor = "#C600FF"
+            textarea.style.backgroundColor = "#C600FF";
+            centre.style.height = "100%"
         }else if(inputBackkground === "optEight"){
-            textarea.style.backgroundColor = "#E2013B"
+            textarea.style.backgroundColor = "#E2013B";
+            centre.style.height = "100%"
         }else if(inputBackkground === "optNine"){
-            textarea.style.backgroundColor = "#000"
+            textarea.style.backgroundColor = "#000";
+            centre.style.height = "100%"
         }
         
         
@@ -53,7 +65,7 @@ arr.forEach(toggles => {
 post.addEventListener('click' , () => {
     let inputText = textarea.value;
 
-    outputText.innerHTML += `<span> ${inputText} </span> </br>`;
+    outputText.innerHTML += `<p> ${inputText} </p> </br>`;
 
     textarea.value = "";
 })
