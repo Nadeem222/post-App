@@ -31,7 +31,7 @@
         </div>
         <div class="center">
             
-            <textarea name="" id="" cols="30" rows="5" placeholder="What's on your mind, S Nadeem Ali?"></textarea>
+            <textarea name="" id="" placeholder="What's on your mind, S Nadeem Ali?"></textarea>
         </div>
         <div class="backgroundPicker">
             <div class="background" id="background">
@@ -41,16 +41,16 @@
             <div class="backgroundOpt">
                 
 
-                <input type="color"  id="textColor" onchange="textColorChange()">
+                <input type="color"  id="textColor" onchange="textColorChange()" aria-readonly="true">
                 <img src="./img/optFive.webp" alt=""  onclick="changeBackground()" >
                 <img src="./img/optTwo.webp" alt=""  onclick="changeBackground()">
                 <img src="./img/optThree.webp" alt=""  onclick="changeBackground()">
                 <img src="./img/optFour.webp" alt=""  onclick="changeBackground()">
                 <img src="./img/optFive.webp" alt=""  onclick="changeBackground()">
-                <div class="optSeven" onclick="changeBackground()"></div>
-                <div class="optEight" onclick="changeBackground()"></div>
-                <div class="optNine" onclick="changeBackground()"></div>
-                <div class="optTen" onclick="changeBackground()"></div>
+                <div class="optSeven" onclick="changeBackgroundColor()"></div>
+                <div class="optEight" onclick="changeBackgroundColor()"></div>
+                <div class="optNine" onclick="changeBackgroundColor()"></div>
+                <input type="color" name="" id="backgroundColor" onchange="backgroundColor()">
             </div>
         </div>
         <div class="tagOption">
@@ -65,6 +65,11 @@
             </div>
         </div>
         <button id="post">Post</button>
+        <div class="commentOption">
+            <span onclick="changeLike()" ><i class="fa-regular fa-thumbs-up" id="likeBtn"></i> Like</span>
+            <span><i class="fa-regular fa-comment"></i> Comment</span>
+            <span><i class="fa-solid fa-share"></i> Share</span>
+        </div>
         <div id="result">
             
         </div>

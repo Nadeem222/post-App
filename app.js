@@ -63,10 +63,38 @@ let arr = Array.from(toggles);
 // })
 
 function changeBackground(){
-    console.log(event.target.src)
+    // console.log(event.target.src)
     let imageSrc = event.target.src;
 
     textarea.style.backgroundImage = "url(" + imageSrc + ")";
+
+}
+function changeBackgroundColor(){
+    // console.log(event.target.classList[0])
+
+    let inputBackground = event.target.classList[0];
+         textarea.style.background = '';
+            textarea.style.backgroundImage = '';
+            textarea.style.backgroundColor = '';
+            centre.style.height = '';
+
+     if(inputBackground === "optSeven"){
+                    textarea.style.backgroundColor = "#C600FF";
+                    centre.style.height = "100%"
+                }else if(inputBackground === "optEight"){
+                    textarea.style.backgroundColor = "#E2013B";
+                    centre.style.height = "100%"
+                }else if(inputBackground === "optNine"){
+                    textarea.style.backgroundColor = "#f6f865";
+                    centre.style.height = "100%"
+                }
+}
+function backgroundColor(){
+            textarea.style.background = '';
+            textarea.style.backgroundImage = '';
+            textarea.style.backgroundColor = '';
+            centre.style.height = '';
+            textarea.style.backgroundColor = event.target.value;
 
 }
 function textColorChange(){
@@ -78,9 +106,15 @@ function textColorChange(){
 post.addEventListener('click' , () => {
     let inputText = textarea.value;
 
-    outputText.innerHTML += `<p> ${inputText} </p> </br>`;
-
-    textarea.value = "";
+    // outputText.innerHTML += `<p> ${inputText} </p> </br>`;
+    textarea.readOnly= true;
+    textarea.style.height= "400px";
+    centre.style.height = "400px";
+    document.querySelector(".tagOption").style.display = "none"
+    document.querySelector(".backgroundPicker").style.display = "none"
+    document.querySelector("#post").style.display = "none"
+    document.querySelector(".commentOption").style.display = "flex"
+    // textarea.value = "";
 })
 
 
@@ -100,3 +134,28 @@ document.querySelector("#toggleArrow").addEventListener('click' , () => {
 
     console.log("hi")
 })
+
+function changeLike(){
+    let likeIcon = event.target.querySelector('#likeBtn');
+    let likeText = event.target;
+
+    console.log(likeText)
+
+    if(likeIcon){
+        likeIcon.classList.toggle("fa-regular");
+          likeIcon.classList.toggle("fa-solid");
+
+          if (likeIcon.classList.contains("fa-solid")) {
+            likeText.style.color = "blue";
+          } else {
+            likeText.style.color = "#898A8D";
+          }
+
+
+    }
+
+
+    // likeBtn.style.color = "blue"
+    console.log(likeBtn)
+
+}

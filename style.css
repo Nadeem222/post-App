@@ -18,8 +18,8 @@ body{
 .container{
     display: flex;
     flex-direction: column;
-    height: 500px;
-    width:500px;
+    height: 650px;
+    width:700px;
     margin: auto;
     border-radius: 16px;
     border: 1px solid;
@@ -83,14 +83,14 @@ body{
     cursor: pointer;
 }
 .center{
-    height: 30%;
+    height: 40%;
     width: 100%;
 }
 .center textarea{
     width: 100%;
     height: 100%;
     border: none;
-    padding: 0 10px;
+    padding: 10px 10px;
     font-size: 30px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -118,8 +118,8 @@ textarea:focus{
     
 }
 .backgroundOpt img , .backgroundOpt div{
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     border-radius: 8px;
     cursor: pointer;
 }
@@ -136,17 +136,17 @@ textarea:focus{
     background-color: #E2013B;
 }
 .optNine{
-    background-color: black;
+    background-color: #f6f865;
 }
 .background , .background img {
-    width: 45px;
-    height: 45px;
+    width: 53px;
+    height: 53px;
     position: relative;
 }
 .toggleOpen{
     position: absolute;
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     left: 10px;
     top: 7px;
     background-color: #E4E6EB;
@@ -210,13 +210,27 @@ textarea:focus{
     border-radius: 8px;
     margin: 0px 10px;
 }
-#textColor{
+#textColor , #backgroundColor{
     border-radius: 8px;
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     padding: 0;
     border: none;
     outline: none;
     background-color: #000  ;
+    cursor: pointer;
+}
+.commentOption {
+    display: none;
+    justify-content: space-around;
+    padding: 13px 0px;
+    border-top:1px solid #a2a3a5;
+    margin: 30px 10px 0px 10px;
+    
+}
+.commentOption span{
+    font-size: 20px;
+    font-weight: 500;
+    color: #898A8D;
     cursor: pointer;
 }
