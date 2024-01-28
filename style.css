@@ -9,11 +9,110 @@
     box-sizing: border-box;
 }
 body{
+    
+    height: 100vh;
+    font-family: "Segoe ui historic";
+    flex-direction: column;
+    background-color: #F0F2F5;
+    width: 100%;
+}
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    padding: 0px 20px;
+    background-color: #fff;
+}
+.searchBox{
+    position: relative;
+}
+.search{
+    width: 300px;
+    height: 55px;
+    padding: 15px;
+    border-radius: 35px;
+    border: none;
+    background-color: #F0F2F5;
+    font-size: 20px;
+    padding-left: 45px;
+}
+
+
+
+.fa-magnifying-glass{
+    font-size: 20px;
+    position: absolute;
+    left: 14px;
+    top: 18px;
+    color: #65676B;
+}
+.navLogo{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    gap: 10px;
+}
+.fa-facebook{
+    font-size: 50px;
+    color: #1877F2;
+}
+.navCenter{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: center;
+    gap: 10px;
+}
+.navCenter span{
+    width: 150px;
+    height: 65px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    font-family: "Segoe ui historic";
+    border-radius: 12px;
+}
+.navCenter span:hover{
+    background-color: #F0F2F5;
+    
+}
+.navIcon{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+}
+.navIcon span img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.navIcon span{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #F0F2F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navIcon .arrow{
+    position: absolute;
+    background-color: #F0F2F5;
+    bottom: -4px;
+    right: 0px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #fff;
+}
+.navIcon .profileImg{
+    position: relative;
 }
 .container{
     display: flex;
@@ -22,8 +121,9 @@ body{
     width:700px;
     margin: auto;
     border-radius: 16px;
-    border: 1px solid;
     overflow: auto;
+    background-color: #fff;
+    margin-top: 20px;
 }
 .topBar{
     display: flex;
@@ -105,7 +205,7 @@ textarea:focus{
     border: none;
 }
 .optOne{
-    background-color: #f0f2f5;
+    background-color: #F0F2F5;
 }
 .backgroundPicker{
     display: flex;
@@ -223,6 +323,7 @@ textarea:focus{
 .commentOption {
     display: none;
     justify-content: space-around;
+    align-items: center;
     padding: 13px 0px;
     border-top:1px solid #a2a3a5;
     margin: 30px 10px 0px 10px;
@@ -233,4 +334,161 @@ textarea:focus{
     font-weight: 500;
     color: #898A8D;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.commentOption span img{
+    width: 22px;
+    height: 22px;
+}
+.emoji{
+    width: 350px;
+    height: 80px;
+    background-color: #1877F2;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    gap: 11px;
+    position: absolute;
+    top: -56px;
+    
+}
+
+.emoji img:hover{
+    scale: 1.5;
+}
+.commentContainer{
+    position: relative;
+}
+.mobileNavBar{
+    display: none;
+    width: 100%;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    flex-direction: column;
+}
+.mobileNavBar .mobileImg{
+    width: 80px;
+    height: 70px;
+}
+.mobileTop{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.mobileBottom{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+@media screen and (max-width:1450px) {
+    .search{
+        width: 50px;
+        height: 50px;
+        padding: 0;
+    }
+    
+}
+@media screen and (max-width:1200px) {
+    .navIcon span{
+        width: 50px;
+        height: 50px;
+    }
+    .navIcon span svg{
+        width: 20px;
+        height: 20px;
+    }
+    .navIcon .arrow{
+        width: 20px;
+        height: 20px;
+    }
+    .center span{
+        width: 100px;
+
+    }
+    
+}
+@media screen and (max-width:926px) {
+    .navIcon span{
+        width: 40px;
+        height: 40px;
+    }
+    .navIcon span svg{
+        width: 15px;
+        height: 15px;
+    }
+    .navIcon .arrow{
+        width: 15px;
+        height: 15px;
+    }
+    .center span{
+        width: 80px;
+        
+    }
+    .center span svg{
+        width: 30px;
+        height: 30px;
+    }
+    
+}
+@media screen and (max-width:768px){
+    .navBar{
+        display: none;
+    }
+    .mobileNavBar{
+        display: flex;
+    }
+    .container{
+        width: 95%;
+        height: 80vh;
+        margin: 20px 10px 0px 10px;
+    }
+    .backgroundOpt img , .background img , #textColor, #backgroundColor , .backgroundOpt div , .toggleOpen {
+        width: 30px;
+        height: 30px;
+    }
+    .background{
+        width: 43px;
+        height: 43px;
+    }
+    .tagOption{
+        justify-content: center;
+    }
+    .navIcon{
+        width: 100%;
+    }
+    .topBar{
+        padding: 0px 10px;
+    }
+    .topBar span{
+        width: 30px;
+        height: 30px;
+    }
+    .topBar i{
+        font-size: 20px;
+    }
+    .commentOption span{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:408px){
+
+    .backgroundOpt img , .background img, #textColor, #backgroundColor , .backgroundOpt div , .toggleOpen {
+        width: 25px;
+        height: 25px;
+    }
+    .background{
+        width: 38px;
+        height: 38px;
+    }
+    .profile-img img{
+        width: 50px;
+        height: 50px;
+    }
 }

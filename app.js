@@ -159,3 +159,92 @@ function changeLike(){
     console.log(likeBtn)
 
 }
+
+let emojiTimeout;
+
+document.getElementById('likeSpan').addEventListener('mouseover', function () {
+    document.querySelector('.emoji').style.display = 'flex';
+});
+
+document.getElementById('likeSpan').addEventListener('mouseout', function () {
+    
+    emojiTimeout = setTimeout(() => {
+        document.querySelector('.emoji').style.display = 'none';
+    }, 5000);
+});
+
+
+
+document.querySelector('.emoji').addEventListener('click', function (event) {
+    // console.log(event.target.id)
+    let likeBtn = document.getElementById('likeSpan');
+    if(event.target.id === "likeEmoji"){
+        
+        likeBtn.innerHTML = `<img src="${event.target.src}"> Like `
+        likeBtn.style.color = "#0566FF"
+        likeBtn.style.fontWeight = "600"
+        document.querySelector('.emoji').style.display = 'none';
+    }
+    else if(event.target.id === "loveEmoji"){
+        likeBtn.innerHTML = `<img src="${event.target.src}"> Love `
+        likeBtn.style.color = "#E73B54"
+        likeBtn.style.fontWeight = "600"
+        document.querySelector('.emoji').style.display = 'none';
+    }
+    else if(event.target.id === "sadEmoji"){
+        likeBtn.innerHTML = `<img src="${event.target.src}"> sad `
+        likeBtn.style.color = "#F8BA40"
+        likeBtn.style.fontWeight = "600"
+        document.querySelector('.emoji').style.display = 'none';
+    }
+    else if(event.target.id === "careEmoji"){
+        likeBtn.innerHTML = `<img src="${event.target.src}"> care `
+        likeBtn.style.color = "#F8BA40"
+        likeBtn.style.fontWeight = "600"
+        document.querySelector('.emoji').style.display = 'none';
+    }
+    else if(event.target.id === "hahaEmoji"){
+        likeBtn.innerHTML = `<img src="${event.target.src}"> haha `
+        likeBtn.style.color = "#F8BA40"
+        likeBtn.style.fontWeight = "600"
+        document.querySelector('.emoji').style.display = 'none';
+    }
+    else if(event.target.id === "wowEmoji"){
+        likeBtn.innerHTML = `<img src="${event.target.src}"> Wow `
+        likeBtn.style.color = "#F8BA40"
+        likeBtn.style.fontWeight = "600"
+        document.querySelector('.emoji').style.display = 'none';
+    }
+
+    
+});
+document.getElementById('likeEmoji').addEventListener('mouseenter', function () {
+    // Clear the timeout if the user hovers over the like emoji span
+    clearTimeout(emojiTimeout);
+});
+
+// Like emoji span mouseleave
+document.getElementById('likeEmoji').addEventListener('mouseleave', function () {
+    // Set a timeout to hide the emoji after 2 seconds (adjust as needed)
+    emojiTimeout = setTimeout(() => {
+        document.querySelector('.emoji').style.display = 'none';
+    }, 2000);
+});
+function updatePlaceholder() {
+    var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+    if (screenWidth < 1450) {
+        document.querySelector('.search').placeholder = '';
+    } else {
+        document.querySelector('.search').placeholder = 'Search Facebook';
+    }
+}
+
+
+updatePlaceholder();
+
+
+window.addEventListener('resize', function () {
+    updatePlaceholder();
+});
+
