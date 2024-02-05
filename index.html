@@ -110,77 +110,117 @@
         </div>
     </div>
     <div class="container">
-        <div class="topBar">
-            <h1>Create Post 
-            </h1>
-            <span><i class="fa-solid fa-xmark"></i></span>
-           
-        </div>
-        <hr>
-        <div class="profile">
-            <div class="profile-img" >
-                <img src="./profile.jpg" alt="">
-            </div>
-            <div class="profileName">
+        <div class="leftSideBar">
+            <ul>
+                <li><span><img src="./profile.jpg" alt="" class="sideProfile"></span> S Nadeem Ali</li>
+                <li><span><img src="./img/freinds.png" alt=""></span> Friends</li>
+                <li><span><img src="./img/memory.png" alt=""></span> Memory</li>
+                <li><span><img src="./img/saved.png" alt=""></span> Saved</li>
+                <li><span><img src="./img/4GR4KRf3hN2 (1).png" alt=""> </span>Groups</li>
+                <li><span><img src="./img/video.png" alt=""></span> Video</li>
                 
-                <p>S Nadeem Ali</p>
-                <p class="publicPara"><span><i class="fa-solid fa-earth-asia"></i></span>Public <span><i class="fa-solid fa-caret-down"></i></span></p>
-            </div>
+            </ul>
         </div>
-        <div class="center">
-            
-            <textarea name="" id="" placeholder="What's on your mind, S Nadeem Ali?"></textarea>
-        </div>
-        <div class="backgroundPicker">
-            <div class="background" id="background">
-                <img src="./SATP_Aa_square-2x.png" alt="" id="bgImg">
-                <span id="toggleArrow" class="toggleOpen toggleClose "><i class="fa-solid fa-angle-left"></i></span>
+        <div class="mainContent">
+            <div class="slider">
+                <div class="card">
+                    <div class="cardImg">
+
+                    </div>
+                    <div class="plus">
+
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    
+                    <p>Create Story</p>
+                </div>
+                <div class="card">
+                    <img src="./profile.jpg" alt="">
+                </div>
+                <div class="card">
+                    <img src="./profile.jpg" alt="">
+                </div>
+                <div class="card">
+                    <img src="./profile.jpg" alt="">
+                </div>
             </div>
-            <div class="backgroundOpt">
+
+            <div class="content">
                 
+                            <div class="topBar">
+                                <h1>Create Post 
+                                </h1>
+                                <span><i class="fa-solid fa-xmark"></i></span>
+                               
+                            </div>
+                            <hr>
+                            <div class="profile">
+                                <div class="profile-img" >
+                                    <img src="./profile.jpg" alt="">
+                                </div>
+                                <div class="profileName">
+                                    
+                                    <p>S Nadeem Ali</p>
+                                    <p class="publicPara"><span><i class="fa-solid fa-earth-asia"></i></span>Public <span><i class="fa-solid fa-caret-down"></i></span></p>
+                                </div>
+                            </div>
+                            <div class="center">
+                                
+                                <textarea name="" id="" placeholder="What's on your mind, S Nadeem Ali?"></textarea>
+                            </div>
+                            <div class="backgroundPicker">
+                                <div class="background" id="background">
+                                    <img src="./SATP_Aa_square-2x.png" alt="" id="bgImg">
+                                    <span id="toggleArrow" class="toggleOpen toggleClose "><i class="fa-solid fa-angle-left"></i></span>
+                                </div>
+                                <div class="backgroundOpt">
+                                    
+                    
+                                    <input type="color"  id="textColor" onchange="textColorChange()" aria-readonly="true">
+                                    <img src="./img/th.jpg" alt=""  onclick="changeBackground()" >
+                                    <img src="./img/Natural-Facebook-Cover-Photo.jpg" alt=""  onclick="changeBackground()">
+                                    <img src="./img/optThree.webp" alt=""  onclick="changeBackground()">
+                                    <img src="./img/optFour.webp" alt=""  onclick="changeBackground()">
+                                    <img src="./img/optFive.webp" alt=""  onclick="changeBackground()">
+                                    <div class="optSeven" onclick="changeBackgroundColor()"></div>
+                                    <div class="optEight" onclick="changeBackgroundColor()"></div>
+                                    <div class="optNine" onclick="changeBackgroundColor()"></div>
+                                    <input type="color" name="" id="backgroundColor" onchange="backgroundColor()">
+                                </div>
+                            </div>
+                            <div class="tagOption">
+                                <p>Add to your post</p>
+                                <div class="icons">
+                    
+                                    <span id="imageInput"><i class="fa-regular fa-images"></i></span>
+                                    <span><i class="fa-solid fa-user-tag" style="color: #1877F2;"></i></span>
+                                    <span><i class="fa-regular fa-face-smile" style="color: #F7B928;"></i></span>
+                                    <span><i class="fa-solid fa-location-dot" style="color: red;"></i></span>
+                                    <span><i class="fa-solid fa-ellipsis" style="color: #2ABBA7;"></i></span>
+                                </div>
+                            </div>
+                            <button id="post">Post</button>
+                            <div class="commentContainer">
+                                <div class="emoji">
+                                    <img src="./img/like.png" alt="" id="likeEmoji">
+                                    <img src="./img/Love.png" alt="" id="loveEmoji">
+                                    <img src="./img/Care.png" alt="" id="careEmoji">
+                                    <img src="./img/haha.png" alt="" id="hahaEmoji">
+                                    <img src="./img/wow.png" alt="" id="wowEmoji">
+                                    <img src="./img/sad.png" alt="" id="sadEmoji">
+                                </div>
+                                <div class="commentOption">
+                                    <span id="likeSpan" onclick="changeLike()"><i class="fa-regular fa-thumbs-up" id="likeBtn"></i> Like</span>
+                                    <span><i class="fa-regular fa-comment"></i> Comment</span>
+                                    <span><i class="fa-solid fa-share"></i> Share</span>
+                                </div>
+                            </div>
+                            
+                            <div id="result">
+                                
+                            </div>
 
-                <input type="color"  id="textColor" onchange="textColorChange()" aria-readonly="true">
-                <img src="./img/th.jpg" alt=""  onclick="changeBackground()" >
-                <img src="./img/Natural-Facebook-Cover-Photo.jpg" alt=""  onclick="changeBackground()">
-                <img src="./img/optThree.webp" alt=""  onclick="changeBackground()">
-                <img src="./img/optFour.webp" alt=""  onclick="changeBackground()">
-                <img src="./img/optFive.webp" alt=""  onclick="changeBackground()">
-                <div class="optSeven" onclick="changeBackgroundColor()"></div>
-                <div class="optEight" onclick="changeBackgroundColor()"></div>
-                <div class="optNine" onclick="changeBackgroundColor()"></div>
-                <input type="color" name="" id="backgroundColor" onchange="backgroundColor()">
             </div>
-        </div>
-        <div class="tagOption">
-            <p>Add to your post</p>
-            <div class="icons">
-
-                <span id="imageInput"><i class="fa-regular fa-images"></i></span>
-                <span><i class="fa-solid fa-user-tag" style="color: #1877F2;"></i></span>
-                <span><i class="fa-regular fa-face-smile" style="color: #F7B928;"></i></span>
-                <span><i class="fa-solid fa-location-dot" style="color: red;"></i></span>
-                <span><i class="fa-solid fa-ellipsis" style="color: #2ABBA7;"></i></span>
-            </div>
-        </div>
-        <button id="post">Post</button>
-        <div class="commentContainer">
-            <div class="emoji">
-                <img src="./img/like.png" alt="" id="likeEmoji">
-                <img src="./img/Love.png" alt="" id="loveEmoji">
-                <img src="./img/Care.png" alt="" id="careEmoji">
-                <img src="./img/haha.png" alt="" id="hahaEmoji">
-                <img src="./img/wow.png" alt="" id="wowEmoji">
-                <img src="./img/sad.png" alt="" id="sadEmoji">
-            </div>
-            <div class="commentOption">
-                <span id="likeSpan" onclick="changeLike()"><i class="fa-regular fa-thumbs-up" id="likeBtn"></i> Like</span>
-                <span><i class="fa-regular fa-comment"></i> Comment</span>
-                <span><i class="fa-solid fa-share"></i> Share</span>
-            </div>
-        </div>
-        
-        <div id="result">
-            
         </div>
     </div>
 

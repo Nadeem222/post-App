@@ -21,7 +21,7 @@ body{
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 80px;
+    height: 60px;
     padding: 0px 20px;
     background-color: #fff;
 }
@@ -116,6 +116,39 @@ body{
 }
 .container{
     display: flex;
+    width: 100%;
+    background-color: #F0F2F5;
+}
+.leftSideBar{
+    width: 25%;
+    padding-top: 10px;
+    
+
+}
+.leftSideBar span img{
+    width: 30px;
+    height: 30px;
+    
+}
+.leftSideBar li{
+    display: flex;
+    align-items: center;
+    margin: 5px 0px 0px 10px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(5, 5, 5);
+}
+.leftSideBar li:hover{
+    background-color: #dcdfe6;
+}
+.sideProfile{
+    border-radius: 50%;
+}
+.center{
+    display: flex;
     flex-direction: column;
     height: 650px;
     width:700px;
@@ -181,6 +214,60 @@ body{
     border-radius: 8px;
     font-size: 16px !important;
     cursor: pointer;
+}
+.mainContent{
+    width: 50%;
+}
+.slider{
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+.card{
+    width: 150px;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 16px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+.plus{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #1877F2;
+    border: 4px solid #fff;
+    position: absolute;
+    top: 170px;
+    left: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.plus i{
+    color: #fff;
+}
+.card p{
+    margin-top: 25px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cardImg{
+    width: 100%;
+    height: 75%;
+    background-image: url(./profile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px 16px 0px 0px;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
 }
 .center{
     height: 40%;
@@ -311,6 +398,7 @@ textarea:focus{
     margin: 0px 10px;
 }
 #textColor , #backgroundColor{
+    --webkit-appearance: none;
     border-radius: 8px;
     width: 40px;
     height: 40px;
@@ -320,6 +408,16 @@ textarea:focus{
     background-color: #000  ;
     cursor: pointer;
 }
+#textColor , #backgroundColor::-webkit-color-swatch{
+    border: none;
+    border-radius: 8px;
+    padding: 0;
+}
+#textColor , #backgroundColor::-webkit-color-swatch-wrapper {
+    border: none;
+    border-radius: 8px;
+    padding: 0;
+  }
 .commentOption {
     display: none;
     justify-content: space-around;
@@ -395,21 +493,46 @@ textarea:focus{
     }
     
 }
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1280px) {
     .navIcon span{
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
     }
-    .navIcon span svg{
-        width: 20px;
-        height: 20px;
+    .navLogo , .navIcon{
+        width: 25%;
+    }
+    .navCenter{
+        width: 50%;
+    }
+    
+    .search{
+        width: 40px;
+        height: 40px;
+        padding: 0;
+    }
+    .fa-magnifying-glass{
+        font-size: 15px;
+        top: 14px;
+        left: 12px;
+    }
+    .navLogo span i{
+        font-size: 40px;
+    }
+    .navIcon span svg {
+        width: 15px;
+        height: 15px;
+    }
+    .navCenter svg{
+        width: 25px;
+        height: 25px;
     }
     .navIcon .arrow{
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
     }
     .center span{
-        width: 100px;
+        width: 150px;
+       
 
     }
     
